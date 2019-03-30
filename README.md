@@ -13,7 +13,7 @@ To communicate with user, board have two diodes and three buttons:
 - LED for indicating about calibration (**CALIBRATION_LED**)    
 - button for reguesting calibration (**CALIBRATION_BUTTON**)   
 - button for requesting software reset (**FACTORY\_RESET\_BUTTON**)    
-- button for requesting hardware reset (plugged directly to AVR)    
+- button for requesting hardware reset (plugged directly to AVR's RESET pin)    
     
 After plugging a battery to board, it setups itsef and then it blinks MAIN\_LED three times to tell the user that it started to work. During that work, processor constantly checks soil humidity and it turns the MAIN\_LED on and keeps it on until soil humidity changes.  
 Some plants need other humidity level (cactus for example needs more dry soil than bonsai), so there is ability to calibrate the level of wetness that is interpreted as dry. To do that you need to push CALIBRATION\_BUTTON when the soil is finally too dry. In that moment, CALIBRATION\_LED turns on for a while, concurrently saving current humidity level to EEPROM, which is immune for hardware reset, so there is no need to calibrate after pushing hardware reset button.  
