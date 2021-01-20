@@ -1,7 +1,7 @@
 # AVR soil humidity sensor
 
 ***
-**NOTE**: This is my university project that I have finished one year ago (2018.02), I am sure that today I would do it little differently (more optimal and easier to read). I will make some updates in the future.
+**NOTE**: This is my university project that I have finished one year ago (2018.02), I am sure that today I would do it little differently (more optimal and easier to read). 
 ***
 
 This is a simple project of controller that checks soil humidity by analog meter. I used ATmega328P microprocessor which program was written in AVR-C.
@@ -26,7 +26,7 @@ There is a ability to manipulate gap value between upper and lower limit by usin
   
 During program's starting up, it checks if there is stored value with calibrated dry level - in that case, it loads that value as threshold, in other case it uses default value.
 
-#### Some things that could be done butter
+#### Some things that could be done better
 I know there is some things that could be done better (and they will someday). These are examples that I see today: 
 
 1. Using sleep mechanism to lower battery usage  
